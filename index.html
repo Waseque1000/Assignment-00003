@@ -22,15 +22,18 @@
       tailwind.config = {
         theme: {
           extend: {
-            // colors: {
-            //   clifford: "#da373d",
-            // },
+            colors: {
+              clifford: "#da373d",
+            },
+            backgroundImage: {
+              bgImage: 'url("./assets/bg.jpg")',
+            },
           },
         },
       };
     </script>
   </head>
-  <body>
+  <body class="p-10">
     <!-- ! header  -->
     <header>
       <section>
@@ -103,8 +106,8 @@
     <!-- ! about us  -->
     <section class="bg-[#FFFFFF] mb-8">
       <img class="w-28 pb-7" src="./assets/Vector.png" alt="" />
-      <div>
-        <div class="flex">
+      <div class="">
+        <div class="lg:flex">
           <div class="mx-auto">
             <div class="flex flex-col justify-center gap-8">
               <p>About Us</p>
@@ -280,13 +283,13 @@
     </section>
 
     <!--  -->
-    <section>
-      <div class="mb-10 mt-10">
+    <section class="mt-20 mb-10">
+      <div class="mb-16 mt-10">
         <p class="text-center text-black">
-          <i class="fa-solid fa-arrow-right mr-2"></i>Explore our Latest works
+          <i class="fa-solid fa-arrow-right mr-2"></i>Rinterio News
         </p>
         <h1 class="text-4xl text-black font-bold text-center mt-2 mb-2">
-          Our Works Process
+          Read Our Articles and News
         </h1>
         <p class="text-center text-black">
           The barn house captivates with its blend of rustic charm and modern
@@ -308,9 +311,9 @@
               The barn house captivates with its blend of rustic charm and
               modern.
             </p>
-            <div class="card-actions">
+            <div class="card-actions text-black font-bold">
               <p>
-                Read More
+                Read More......
                 <i
                   class="fa-solid fa-arrow-right rounded-xl p-3 bg-lime-300"
                 ></i>
@@ -330,7 +333,7 @@
               The barn house captivates with its blend of rustic charm and
               modern.
             </p>
-            <div class="card-actions">
+            <div class="card-actions text-black font-bold">
               <p>
                 Read More
                 <i
@@ -352,7 +355,7 @@
               The barn house captivates with its blend of rustic charm and
               modern.
             </p>
-            <div class="card-actions">
+            <div class="card-actions text-black font-bold">
               <p>
                 Read More
                 <i
@@ -364,5 +367,120 @@
         </div>
       </div>
     </section>
+
+    <!-- ? -->
+    <section
+      class="bg-bgImage w-[100%] bg-no-repeat bg-cover flex items-center justify-center"
+    >
+      <div class="w-[90%] lg:w-[70%] mx-auto my-20">
+        <button
+          class="btn w-[50%] bg-white lg:w-[20%] mx-auto rounded-2xl border-none text-[#494949] text-base font-bold flex"
+        >
+          <i class="fa-solid fa-arrow-right text-black w text-xl"></i>Let's
+          Connect
+        </button>
+        <h2
+          class="w-[70%] mx-auto lg:w-auto text-center text-2xl lg:text-4xl font-bold my-5"
+        >
+          Let's Discuss Next Project
+        </h2>
+        <p class="text-base text-center font-medium my-5">
+          "Let's discuss our next project together. We'll brainstorm ideas,
+          define clear objectives, set realistic milestones, and develop a
+          strategic plan to ensure a successful and smooth execution from start
+          to finish.
+        </p>
+        <form action="" class="w-[100%] grid grid-cols-2 gap-4">
+          <input
+            class="col-span-full bg-white lg:col-span-1 h-[50px] p-3 rounded-2xl"
+            type="text"
+            placeholder="First Name"
+          />
+          <input
+            class="col-span-full bg-white lg:col-span-1 h-[50px] p-3 rounded-2xl"
+            type="text"
+            placeholder="Last Name"
+          />
+          <input
+            class="col-span-full bg-white lg:col-span-1 h-[50px] p-3 rounded-2xl"
+            type="text"
+            placeholder="Phone Number"
+          />
+          <input
+            class="col-span-full bg-white lg:col-span-1 h-[50px] p-3 rounded-2xl"
+            type="text"
+            placeholder="Email Number"
+          />
+          <textarea
+            name=""
+            id=""
+            cols="12"
+            rows="6"
+            class="col-span-full bg-white pt-5 ps-3 rounded-2xl"
+          >
+ Write your message here
+
+           </textarea
+          >
+          <button
+            class="btn col-span-full bg-[#ABEF5F] rounded-2xl text-xl font-extrabold"
+          >
+            Send Mail
+            <i
+              class="fa-solid fa-arrow-right bg-black text-white w-[30px] h-[30px] rounded-full -rotate-45 leading-6 p-1 me-1"
+            ></i>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ? footer  -->
+    <footer class="w-[100%] border border-transparent bg-black manrope-fonts">
+      <div class="w-[90%] lg:w-[80%] mx-auto my-20">
+        <h2 class="text-center">
+          <a class="text-2xl p-2 font-extrabold text-white"
+            ><i
+              class="fa-solid fa-arrow-right bg-btn_text_color text-black w-[30px] h-[30px] rounded-full -rotate-45 leading-6 p-1 me-1"
+            ></i
+            >Rinterio</a
+          >
+        </h2>
+        <p class="text-center my-4 text-[#737373]">
+          The house designs blend functionality with aesthetics, creating spaces
+          that are both beautiful and practical. <br />
+          We focus on innovative solutions, personalized features, and quality
+          craftsmanship to enhance your living experience.
+        </p>
+        <div
+          class="w-[100%] flex lg:flex-row flex-col items-center justify-around my-10"
+        >
+          <li class="list-none my-5 lg:my-0">
+            <a href="" class="text-[#E9E9E9]">Home</a>
+          </li>
+          <li class="list-none my-5 lg:my-0">
+            <a href="" class="text-[#E9E9E9]">Services</a>
+          </li>
+          <li class="list-none my-5 lg:my-0">
+            <a href="" class="text-[#E9E9E9]">Portfolio</a>
+          </li>
+          <li class="list-none my-5 lg:my-0">
+            <a href="" class="text-[#E9E9E9]">Blogs</a>
+          </li>
+          <li class="list-none my-5 lg:my-0">
+            <a href="" class="text-[#E9E9E9]">Contact Us</a>
+          </li>
+        </div>
+        <div class="mx-auto lg:w-[20%] w-[90%]">
+          <button
+            class="flex w-[100%] btn border-none text-black rounded-2xl text-xl font-extrabold bg-[#ABEF5F]"
+          >
+            Book Consult
+            <i
+              class="fa-solid fa-arrow-right bg-black text-white w-[30px] h-[30px] rounded-full -rotate-45 leading-6 p-1 me-1"
+            ></i>
+          </button>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
